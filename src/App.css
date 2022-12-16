@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.landing__div {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(white, #D4E7FE);
+}
