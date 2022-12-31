@@ -6,6 +6,10 @@ import Home from './home/Home'
 import Login from './auth/Login'
 import Register from './auth/Register'
 import LandingPage from './home/LandingPage'
+import SeeMore from './home/SeeMore'
+import CreateArticle from './home/CreateArticle'
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +21,8 @@ function App() {
         <Route path="/home" component={Home} ></Route>
         <Route path="/login" component={Login}></Route>
         <Route path="/register" component={Register}></Route>
+        <Route path="/see-more" component={SeeMore}></Route>
+        <Route path="/create-article" component={CreateArticle}></Route>
       </Switch>
     </div>
   )
