@@ -1,11 +1,13 @@
-import Home from './home/Home'
-import Login from './auth/Login'
-import Register from './auth/Register'
-import LandingPage from './home/LandingPage'
-import SeeMore from './home/SeeMore'
-import CreateArticle from './home/CreateArticle'
-import {Switch, Route} from "react-router-dom"
-import './App.css'
+import Home from './home/Home';
+import Login from './auth/Login';
+import SeeMore from './home/SeeMore';
+import Register from './auth/Register';
+import LandingPage from './home/LandingPage';
+import Confirmation from './auth/Confirmation';
+import CreateArticle from './home/CreateArticle';
+import ProtectedRoute from './auth/ProtectedRoute';
+import { Switch, Route } from "react-router-dom";
+import './App.css';
 
 function App() {
   return (
@@ -14,24 +16,27 @@ function App() {
         <Route exact path="/">
           <LandingPage />
         </Route>
-        <Route path="/home">
-          <Home />
-        </Route>
         <Route path="/login">
           <Login />
         </Route>
         <Route path="/register">
           <Register />
         </Route>
+        <Route path="/confirmation">
+          <Confirmation />
+        </Route>
+        <Route path="/home">
+          <ProtectedRoute component={Home} />
+        </Route>
         <Route path="/see-more">
-          <SeeMore />
+          <ProtectedRoute component={SeeMore} />
         </Route>
         <Route path="/create-article">
-          <CreateArticle />
+          <ProtectedRoute component={CreateArticle} />
         </Route>
       </Switch>
     </div>
-  )
+  );
 }
 
 export default App
