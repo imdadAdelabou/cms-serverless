@@ -18,7 +18,7 @@ function LandingPage() {
             <CustomButton width="w-[162px]" content="Log In" isActive={false} action={() => {}}></CustomButton>
             </div>
         </div>
-        <img src="src/assets/Iamge.svg" className="m-0" />
+        <img src="/assets/Iamge.svg" className="m-0" />
         </div>
     </div>);
 }
