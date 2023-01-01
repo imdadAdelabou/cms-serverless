@@ -1,16 +1,19 @@
+import { useHistory } from "react-router-dom";
 import { Article } from "../helpers/constant";
 import CustomButton from "./CustomButton";
 
-function ArticleCard(props: Article) {
+function ArticleCard(props: Article & { handleClick: () => void; }) {
+  const history = useHistory();
+
   return (
-    <div>
+    <div className="my-2 w-full">
       <div className="rounded-lg w-1/2">
-        <img src="https://static.wikia.nocookie.net/boruto/images/5/54/Boruto_Uzumaki_1.png/revision/latest?cb=20220222163347" />
-        <h2 className="font-bold text-lg mt-4">{props.title}</h2>
+        <h2 className="font-bold text-xl mt-4">{props.title}</h2>
+        <h3 className="font-bold text-lg mb-2">{props.tag}</h3>
         <p className="mb-6">
-          {props.content.substring(0, 250)}
+          {props.text.substring(0, 250)}
         </p>
-        <CustomButton content="Voir plus" isActive={true} action={() => console.log("Top")} width="w-[162px]"></CustomButton>
+        <CustomButton content="Voir plus" isActive={true} action={props.handleClick} width="w-[162px]"></CustomButton>
       </div>
     </div>
   );
