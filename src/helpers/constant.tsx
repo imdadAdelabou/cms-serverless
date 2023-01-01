@@ -1,8 +1,6 @@
-
 export interface Article {
-    title: string;
-    content: string;
-    urlImg: string;
+  id: string;
+  tag: string;
+  text: string;
+  title: string;
 }
-
-
