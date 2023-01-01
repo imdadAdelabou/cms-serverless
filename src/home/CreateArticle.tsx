@@ -5,12 +5,12 @@ function CreateArticle() {
   return (
     <div className="w-screen">
       <div className="px-60 mt-20 ">
-        <CustomInput placeHolder="Title" typeInput="text"></CustomInput>
+        <CustomInput placeHolder="Title" typeInput="text" handleChange={(value) => console.log(value)}></CustomInput>
         <textarea className="w-full border border-[#000842] h-72 mb-8 p-4" placeholder="content"></textarea>
         <input type="file" className="mb-8" />
 
         <div className="mb-8">
-          <CustomInput placeHolder="Tags" typeInput="text" ></CustomInput>
+          <CustomInput placeHolder="Tags" typeInput="text" handleChange={(value) => console.log(value)}></CustomInput>
           <CustomButton width="w-1/4" isActive={true} action={() => console.log("")} content="Add"></CustomButton>
         </div>
 
