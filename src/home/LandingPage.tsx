@@ -18,10 +18,9 @@ function LandingPage() {
             <CustomButton width="w-[162px]" content="Log In" isActive={false} action={() => redirectTo("/login")}></CustomButton>
           </div>
         </div>
-        <img src="src/assets/Iamge.svg" className="m-0" />
-      </div>
-    </div>
-  );
+        <img src="/assets/Iamge.svg" className="m-0" />
+        </div>
+    </div>);
 }
 
 export default LandingPage;

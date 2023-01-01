@@ -33,7 +33,7 @@ function Login() {
       </div>
       <div className="w-1/2 h-full bg-[#000842] rounded-2xl m-auto" >
         <div className="flex justify-center items-center h-full flex-col">
-          <img src="src/assets/salyBg.png" />
+          <img src="/assets/salyBg.png" />
           <h3 className="text-white text-5xl mt-28 text-start">Login to CMS</h3>
         </div>
       </div>
