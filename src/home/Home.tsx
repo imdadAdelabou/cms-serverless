@@ -9,12 +9,12 @@ function Home() {
     <div className="w-screen flex justify-center items-center mt-10">
       <div className="w-full">
         <div className="w-1/3">
-          <CustomInput typeInput="text" placeHolder="Rechercher par tags" ></CustomInput>
+          <CustomInput typeInput="text" placeHolder="Rechercher par tags" handleChange={(value) => console.log(value)} ></CustomInput>
           <CustomButton content="Rechercher" isActive={true} action={() => console.log("okay")} width="w-1/2"></CustomButton>
         </div>
 
         <div className="grid grid-cols-3 mt-20">
-          <ArticleCard urlImg="" content={content} title="First Title"></ArticleCard>
+          <ArticleCard  text={content} title="First Title" id="" tag=""></ArticleCard>
         </div>
       </div>
     </div>
