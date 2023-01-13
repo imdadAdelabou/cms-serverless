@@ -1,6 +1,5 @@
 import Home from './home/Home';
 import Login from './auth/Login';
-import SeeMore from './home/SeeMore';
 import Register from './auth/Register';
 import LandingPage from './home/LandingPage';
 import Confirmation from './auth/Confirmation';
@@ -27,9 +26,6 @@ function App() {
         </Route>
         <Route path="/home">
           <ProtectedRoute component={Home} />
-        </Route>
-        <Route path="/see-more">
-          <ProtectedRoute component={SeeMore} />
         </Route>
         <Route path="/create-article">
           <ProtectedRoute component={CreateArticle} />
