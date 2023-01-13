@@ -9,6 +9,6 @@
 </ul>
 
 # How to launch the project
->cd cms-serverless <br /> <br />
+> cd cms-serverless <br /> <br />
 > npm install <br /> <br />
 > npm run dev
