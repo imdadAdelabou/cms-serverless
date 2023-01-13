@@ -1,7 +1,7 @@
 import { Article } from "../helpers/constant";
 
 class ArticleService {
-  private baseUrl: string = "https://j76sewpid3.execute-api.eu-west-3.amazonaws.com/api";
+  private baseUrl: string = "https://3xws3wb3u9.execute-api.us-east-1.amazonaws.com/api";
 
   async getAll(token: string): Promise<Article[]> {
     return await fetch(this.baseUrl + '/', {
